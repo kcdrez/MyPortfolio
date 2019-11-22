@@ -8,3 +8,21 @@
 .portrait {
   max-height: 500px;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p.h3 {
+    font-size: 1.25rem;
+  }
+  #portfolio img {
+    max-height: 250px;
+  }
+  #portfolio .description {
+    margin-top: .75rem;
+  }
+  #portfolio .description h3{
+    text-align: center;
+  }  
+}
