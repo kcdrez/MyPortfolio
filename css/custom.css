@@ -1,7 +1,7 @@
 /* your styles go here */
 
 #intro {
-	background: url(../img/home.jpg) center center no-repeat; 
+	background: url(../assets/img/home.jpg) center center no-repeat; 
 	background-size: cover;
 }
 
