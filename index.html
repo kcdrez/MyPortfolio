@@ -1,238 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>KC Drez Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Font Awesome CSS-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>KC Drez - Portfolio</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <script src="https://use.fontawesome.com/6282cdfdcb.js"></script>
-    <!-- Google fonts - Roboto + Roboto Slab-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-    <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
   </head>
   <body>
-    <!-- Reference item-->
-    <!-- navbar-->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container"><a href="#intro" class="navbar-brand scrollTo">KC Drez</a>
-          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
-          <div id="navbarcollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
-              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
-              <li class="nav-item"><a href="#portfolio" class="nav-link link-scroll">Portfolio</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
-            </ul>
-          </div>
+    <div class="navbar-fixed">
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">
+            <img class="responsive-img" src="assets/img/kc_icon.png" alt="KC Drez">
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
       </nav>
-    </header>
-    <!-- Intro Image-->
-    <section id="intro" class="intro-section pb-2">
-      <div class="container text-center">
-        <div data-animate="fadeInDown">
-          <img src="assets/img/main.jpg" class="img-fluid portrait">
+    </div>
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="intro" class="">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <div class="row center">
+            <img class="z-depth-3 responsive-img" src="assets/img/main.jpg">
+            <h3 class="header col s12 grey-text text-lighten-3">Hello! Your Friendly Neighborhood 
+            <br>Web Developer is&nbsp;here!</h3>
+          </div>
         </div>
-<!--         <div data-animate="fadeInDown" class="logo">
-          <img src="img/kc_icon.png" alt="logo" width="130">
-        </div> -->
-        <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello! Your friendly neighborhood web developer is here.</h1>
-        <p data-animate="slideInUp" class="h3 text-shadow text-400">I specialize in frontend development using Vue.js and Bootstrap. Check out my portfolio section or contact me via <a href="mailto:kcdrez@gmail.com?Subject=Portfolio" class="email wow fadeInUp">
-          email</a>.</p>
       </div>
-    </section>
-    <!-- About-->
-    <section id="about" class="about-section">
-      <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">About me</h2>
-        </header>
+    </div>
+    <div class="container" id="about">
+      <div class="section">
         <div class="row">
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <p>I am a Web and Tools Engineer, specializing in creating reactive mobile-friendly web applications using Vue.js and Bootstrap libraries. I have collaborated on numerous projects, both for intranet use as well as public facing content.</p>
-            <p>I have extensive knowledge with JavaScript, HTML, and CSS and many related technologies. I learn very quickly and have picked up Vue.js within just a few days and have taught myself many other programming languages such as Scala and VBA as my work requests demands. I also have some preliminary experience using C# and C++.</p>
-            <p>My primary <a href="https://www.gallup.com/cliftonstrengths/en/253715/34-cliftonstrengths-themes.aspx" target="_blank">Gallup Strengths</a> are Analytical, Connectedness, Consistency, Empathy, and Intellection. My ability to analyze data quickly and easily is imperative as a developer to be able to find the optimum solution for both consumers, stakeholders, and other developers. I am a consistent in my communication and programming styles which is key for code maintainability and providing documentation for consumers. I believe that having clear goals and transparent information is the best way to build trust within a team and therefore creating the best projects.</p>
-            <p>I enjoy studying and playings games, both tabletop and digital. Some of my favorites include <i>Battlestar: Galactica the Board Game</i>, <i>Tzolk'in</i>, and <i>Sentinels of the Multiverse</i>. I have even created a few prototype board games of my own!</p>
+          <div class="col l4 m6 s12">
+            <div class="icon-block">
+              <h2 class="center"><i class="material-icons">computer</i></h2>
+              <h5 class="center">Developer</h5>
+              <p>I am a Web and Tools Engineer, specializing in creating reactive mobile-friendly web applications using Vue.js and Bootstrap libraries. I have collaborated on numerous projects, both for intranet use as well as public facing content.</p>
+              <p>I have extensive knowledge with JavaScript, HTML, and CSS and many related technologies. I learn very quickly and have picked up Vue.js within just a few days and have taught myself many other programming languages such as Scala, VBA, C#, and C++ as my work demands.</p>          
+            </div>
           </div>
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <ul>
-              <li>Web Development Frontend
-                <ul>
-                  <li>Javascript, HTML, CSS/Sass, PHP</li>
-                  <li>Vue.js, Knockout.js, Backbone.js, Node.js</li>
-                  <li>jQuery, Bootstrap, Pug</li>
-                </ul>
-              </li>
-              <li>Backend
-                <ul>
-                  <li>MongoDB, PostgreSQL</li>
-                  <li>Jira API, Braintree API (e-commerce)</li>
-                  <li>AWS</li>
-                </ul>
-              </li>
-              <li>Build Deployement
-                <ul>
-                  <li>Webpack</li>
-                  <li>Docker</li>
-                  <li>Verdaccio</li>
-                  <li>Jenkins</li>
-                  <li>Gulp.js</li>
-                </ul>
-              </li>
-              <li>Software
-                <ul>
-                  <li>Git/GitHub</li>
-                  <li>Confluence</li>
-                  <li>Jira</li>
-                </ul>
-              </li>
-              <li>Other Programming
-                <ul>
-                  <li>Scala</li>
-                  <li>C# & C++</li>
-                  <li>Visual Basic for Applications (VBA)</li>
-                </ul>
-              </li>
-            </ul>
-            See my full resumé <a href="./assets/kcdrez_resume.pdf" target="_blank">here!</a>
+          <div class="col l4 m6 s12">
+            <div class="icon-block">
+              <h2 class="center"><i class="material-icons">person</i></h2>
+              <h5 class="center">Strengths</h5>
+              <p>My primary <a href="https://www.gallup.com/cliftonstrengths/en/253715/34-cliftonstrengths-themes.aspx" target="_blank">Gallup Strengths</a> are Analytical, Connectedness, Consistency, Empathy, and Intellection. My ability to analyze data quickly and easily is imperative as a developer to be able to find the optimum solution for both consumers, stakeholders, and other developers. I am a consistent in my communication and programming styles which is key for code maintainability and providing documentation for consumers. I believe that having clear goals and transparent information is the best way to build trust within a team and therefore creating the best projects.</p>
+            </div>
+          </div>
+          <div class="col l4 s12">
+            <div class="icon-block">
+              <h2 class="center"><i class="material-icons">videogame_asset</i></h2>
+              <h5 class="center">Gamer</h5>
+              <p>I enjoy studying and playings games, both tabletop and digital. Some of my favorites include <i>Battlestar: Galactica the Board Game</i>, <i>Tzolk'in</i>, and <i>Sentinels of the Multiverse</i>. I have even created a few prototype board games of my own!</p>
+              <p>Some of my favorite fictional universes includes <i>Pokémon</i>, <i>Star Wars</i>, <i>The Lord of the Rings</i>, <i>Doctor Who</i>, and <i>Marvel</i>. I enjoy discussing and studying about the intellectual and philosophical themes that these stories contain and how they shape culture.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio-section bg-gray">
-      <div class="container">
-        <header class="text-center">
-          <h2 class="title" data-animate="fadeInDown">Portfolio</h2>
-        </header>
-        <div class="row align-items-center" data-animate="fadeInUp">
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <a href="https://direwolfdigital.com/" target="_blank">
-              <img src="assets/img/direwolf_website.png" class="img-fluid">
-            </a>
+    </div>
+    <div class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center">Skills</h1>
+          <div class="row center">
+            <h5 class="header col s12">I specialize in front end web development using Vue.js and Bootstrap and Node.js backend with SQL databases.</h5>
           </div>
-          <div class="col-lg-8 col-md-6 col-sm-12 description">
-            <h3>Dire Wolf Digital</h3>
+        </div>
+      </div>
+      <div class="parallax"><img src="assets/img/smoke.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+    <div class="container" id="skills">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <div class="icon-block">
+              <h2 class="center"><i class="fa fa-chrome"></i></h2>
+              <h5 class="center">Front End</h5>
+              <ul>
+                <li>Javascript, HTML, CSS/Sass, PHP</li>
+                <li>jQuery, Bootstrap, Materialize, Pug</li>
+                <li>Vue.js, Knockout.js, Backbone.js, Node.js</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="icon-block">
+              <h2 class="center"><i class="fa fa-server"></i></h2>
+              <h5 class="center">Backend</h5>
+              <ul>
+                <li>PostgreSQL, MongoDB</li>
+                <li>Jira API, Braintree API (e-commerce)</li>
+                <li>AWS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s12 m6 l3 hide-on-med-only">
+            <div class="icon-block">
+              <h2 class="center"><i class="fa fa-terminal"></i></h2>
+              <h5 class="center">Build Deployment</h5>
+              <ul>
+                <li>Webpack, Gulp.js</li>
+                <li>Docker</li>
+                <li>Verdaccio</li>
+                <li>Jenkins</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s12 m6 l3 hide-on-med-only">
+            <div class="icon-block">
+              <h2 class="center"><i class="fa fa-code"></i></h2>
+              <h5 class="center">Other</h5>
+              <ul>
+                <li>Git, GitHub</li>
+                <li>Confluence</li>
+                <li>Jira</li>
+                <li>Scala</li>
+                <li>C#/C++</li>
+                <li>Visual Basic for Applications (VBA)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row show-on-medium hide-on-large-only hide-on-small-only">
+          <div class="col m6">
+            <div class="icon-block">
+              <h2 class="center"><i class="fa fa-terminal"></i></h2>
+              <h5 class="center">Build Deployment</h5>
+              <ul>
+                <li>Webpack, Gulp.js</li>
+                <li>Docker</li>
+                <li>Verdaccio</li>
+                <li>Jenkins</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col m6">
+            <div class="icon-block">
+              <h2 class="center"><i class="fa fa-code"></i></h2>
+              <h5 class="center">Other</h5>
+              <ul>
+                <li>Git, GitHub</li>
+                <li>Confluence</li>
+                <li>Jira</li>
+                <li>Scala</li>
+                <li>C#/C++</li>
+                <li>Visual Basic for Applications (VBA)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <h1 class="header center">Portfolio</h1>
+        </div>
+      </div>
+      <div class="parallax portfolio"><img src="assets/img/galaxy.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+    <div class="container" id="portfolio">
+      <div class="section">
+        <div class="row">
+          <div class="col m4">
+            <img class="responsive-img" src="assets/img/direwolf_website.png" alt="Dire Wolf Website">
+          </div>
+          <div class="col m8">
+            <h5>Dire Wolf Digital Website</h5>
             I updated the company's website to be mobile responsive and have better accessibility on smaller devices. A majority of the website uses PHP and jQuery, as well as some parts using Vue.js for reactivity with user input.
           </div>
         </div>
-        <div class="row align-items-center my-3" data-animate="fadeInUp">
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <a href="https://direwolfdigital.com/store/#/" target="_blank">
-              <img src="assets/img/direwolf_merch.png" class="img-fluid">
-            </a>
+        <div class="row">
+          <div class="col m4">
+            <img class="responsive-img" src="assets/img/direwolf_merch.png" alt="Dire Wolf Merch Store">
           </div>
-          <div class="col-lg-8 col-md-6 col-sm-12 description">
-            <h3>Dire Wolf Digital Online Store</h3>
-            I collaborated on a team to build the company's online store. We used the Braintree API for e-commerce, as well as creating our own mobile responsive design and flow for customers to purchase our products using Vue.js. We created an internal tool as well so that the marketing department can easily add new products or change prices, images, or quantities for existing products, all of which would update the website dynamically. 
+          <div class="col m8">
+            <h5>Dire Wolf Digital Online Store</h5>
+            I collaborated on a team to build the company's online store. We used the Braintree API for e-commerce, as well as creating our own mobile responsive design and flow for customers to purchase our products using Vue.js. We created an internal tool as well so that the marketing department can easily add new products or change prices, images, or quantities for existing products, all of which would update the website dynamically.
           </div>
         </div>
-        <div class="row align-items-center my-3" data-animate="fadeInUp">
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <a href="https://kcdrez.github.io/poketeam/dist/index.html" target="_blank">
-              <img src="assets/img/pokemon_webapp.png" class="img-fluid">
-            </a>
+        <div class="row">
+          <div class="col m4">
+            <img class="responsive-img" src="assets/img/pokemon_webapp.png" alt="Dire Wolf Merch Store">
           </div>
-          <div class="col-lg-8 col-md-6 col-sm-12 description">
-            <h3>Pokémon Go Companion Web App</h3>
-            <div>The app uses axios to access an API and displays the data using Vue.js and Bootstrap.</div>
-            <div>There are two tools on the page:</div>
-            <ul>
-              <li>Search
-                <ul><li>Search for any Pokémon to view the typing advantages and disadvantages</li></ul>
-              </li>
-              <li>Strongest Pokémon
-                <ul><li>View the strongest Pokémon by type</li></ul>
-              </li>
-            </ul>
+          <div class="col m8">
+            <h5>Pokémon Go Companion Web App</h5>
+            The app uses axios to access an API and displays the data using Vue.js and Bootstrap.
+            Users can search for Pokémon to view type advantages and disadvantages as well as find the highest CP (Combat Power) by each type.
+            I created this app for myself and for friends to aid in our play of Pokémon Go.
           </div>
-        </div>
+        </div>         
       </div>
-    </section>
-    <!-- Contact-->
-    <section id="contact" data-animate="bounceIn" class="contact-section contact">
+    </div>
+    <footer class="page-footer cyan darken-2" id="contact">
       <div class="container">
-        <header class="text-center">
-          <h2 class="title" data-animate="fadeInDown">Contact me</h2>
-        </header>
-        <div class="row text-center">
-          <div class="col">
-            I'd love to connect and talk about future projects, games, or any fun facts that you want to share! Feel free to contact me on any of the following:
+        <div class="row">
+          <div class="col l12">
+            <h5 class="center">Contact Me</h5>
+            <p class="center">I'd love to connect and talk about future projects, games, or any fun facts that you want to share! Feel free to contact me on any of the following: </p>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-lg-2 offset-lg-1 col-md-4 col-6">
-            <a href="https://github.com/kcdrez" class="d-block my-3" title="Stack Overflow" target="_blank">
+        <div class="row">
+          <div class="col center l2 offset-l1 m3 s6">
+            <a href="https://github.com/kcdrez" class="white-text" title="GitHub" target="_blank">
               <i class="fa fa-github" aria-hidden="true"></i> GitHub
             </a>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
-            <a href="mailto:kcdrez@gmail.com?subject=Portfolio" class="d-block my-3" title="Email me">
+          <div class="col center l2 m3 s6">
+            <a href="mailto:kcdrez@gmail.com?subject=Portfolio" class="white-text" title="Email me">
               <i class="fa fa-envelope" aria-hidden="true"></i> Email
             </a>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
-            <a href="https://www.linkedin.com/in/kc-drez/" class="d-block my-3" title="LinkedIn" target="_blank">
+          <div class="col center l2 m3 s6">
+            <a href="https://www.linkedin.com/in/kc-drez/" class="white-text" title="LinkedIn" target="_blank">
               <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
             </a>
           </div>
-          <div class="col-lg-2 offset-lg-0 col-md-4 offset-md-2 col-6">
-            <a href="https://www.facebook.com/kc.drez" class="d-block my-3" title="Facebook" target="_blank">
+          <div class="col center l2 m3 s6">
+            <a href="https://www.facebook.com/kc.drez" class="white-text" title="Facebook" target="_blank">
               <i class="fa fa-facebook"></i> Facebook
             </a>
           </div>
-          <div class="col-lg-2 col-md-4 offset-md-0 col-6 offset-3">
-            <a href="https://stackoverflow.com/users/12414042/kc-drez" class="d-block my-3" title="Stack Overflow" target="_blank">
+          <div class="col center l2 s12">
+            <a href="https://stackoverflow.com/users/12414042/kc-drez" class="white-text" title="Stack Overflow" target="_blank">
               <i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow
             </a>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-lg-left">
-            <p class="social">
-              <a href="https://www.facebook.com/kc.drez" class="external facebook wow fadeInUp" title="fa-facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/kc-drez-80b28460/" data-wow-delay="0.4s" class="external gplus wow fadeInUp" title="LinkedIn">
-                <i class="fa fa-linkedin-square"></i>
-              </a>
-              <a href="mailto:kcdrez@gmail.com?Subject=Portfolio" data-wow-delay="0.6s" class="email wow fadeInUp" title="Email">
-                <i class="fa fa-envelope"></i>
-              </a>
-            </p>
-          </div>
-          <!-- /.6-->
-          <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-            <p>© 2020 KC Drez. All rights reserved.</p>
-          </div>
-          <div class="col-12 mt-4">
-            <p class="template-bootstrapious">Designed by <a href="https://www.bootstrapious.com" target="_blank">Bootstrapious</a>
-              <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-            </p>
-          </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Created by KC Drez
         </div>
       </div>
     </footer>
-    <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-    <script src="js/front.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>
