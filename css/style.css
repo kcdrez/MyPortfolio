@@ -42,20 +42,24 @@ p {
 #intro img {
   border-radius: 10px;
 }
-#portfolio h5 {
+#portfolio-section h5 {
   margin-top: 0;
 }
+#skills, #portfolio, #about {
+  margin-top: -64px;
+  padding-top: 64px;
+}
 @media only screen and (max-width: 600px) {
-  #portfolio h5 {
+  #portfolio-section h5 {
     margin-top: 1rem;
     text-align: center;
   }
-  #portfolio img {
+  #portfolio-section img {
     max-width: 50%;
     margin: 0 auto;
     display: block;
   }
-  #skills ul {
+  #skills-section ul {
     list-style: none;
     text-align: center;
     padding: 0;
