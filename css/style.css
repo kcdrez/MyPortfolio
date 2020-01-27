@@ -39,7 +39,7 @@ p {
   background-image: url("../assets/img/circles.jpg");
   background-size: cover;
 }
-#intro img {
+img.rounded {
   border-radius: 10px;
 }
 #portfolio-section h5 {
