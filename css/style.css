@@ -49,6 +49,9 @@ img.rounded {
   margin-top: -64px;
   padding-top: 64px;
 }
+#portfolio-section .row {
+  margin: 2rem 0;
+}
 @media only screen and (max-width: 600px) {
   #portfolio-section h5 {
     margin-top: 1rem;
