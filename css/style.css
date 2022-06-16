@@ -45,7 +45,7 @@ img.rounded {
 #portfolio-section h5 {
   margin-top: 0;
 }
-#skills, #portfolio, #about {
+#skills, #portfolio, #about, #contact {
   margin-top: -64px;
   padding-top: 64px;
 }
@@ -89,22 +89,6 @@ img.rounded {
     text-shadow: 1px 1px 4px black
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 20%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
@@ -116,6 +100,19 @@ footer.page-footer {
   margin: 0;
 }
 
+footer img {
+  margin: auto;
+  max-width: 250px !important;
+  width: 100%;
+  display: block;
+}
+
 .sidenav-overlay {
   z-index: 998;
 }
+
+.main-img {
+  max-width: 400px !important;
+  width: 100%;
+}
+
